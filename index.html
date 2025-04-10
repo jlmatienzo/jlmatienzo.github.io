@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jolo Matienzo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/99c1d8fd34.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav id="navbar">
+          <!-- <img src="logo.png" alt="Logo" class="logo" /> -->
+          <div class="logo">
+            <a href="#home">
+              <h1>Jolo<span>zozozo</span></h1>
+            </a>
+          </div>
+          <ul class="nav-links">
+            <li><a href="./blog/index.html" style="color: #070707">Blog</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-text">
+          <p>Software Developer</p>
+          <h1>Hi! I'm <span>Jolo</span><br />from the Philippines</h1>
+          <a href="#portfolio" class="cta-button">View My Work</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <div class="about-image">
+              <img src="about.jpg" alt="About Me" />
+            </div>
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+              cum distinctio? Est quos, nesciunt voluptates provident officiis
+              perspiciatis ipsum ducimus minus unde nulla doloribus! Suscipit
+              corporis id cum porro repudiandae!
+            </p>
+            <div class="tab-titles">
+              <p class="tab-link active" onclick="setActive('skills')">
+                Skills
+              </p>
+              <p class="tab-link" onclick="setActive('experience')">
+                Experience
+              </p>
+              <p class="tab-link" onclick="setActive('education')">Education</p>
+            </div>
+            <div class="tab-contents active" id="skills">
+              <ul>
+                <li><span>Web Development</span><br />Web app development</li>
+                <li><span>Web Development</span><br />Web app development</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Oct 2021 - May 2025</span><br />Web Developer -
+                  ahaStudio
+                </li>
+                <li>
+                  <span>Jun 2018 - Jul 2018</span><br />Trainee - Questronix
+                  Corp.
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>BS Computer Science</span><br />University of the
+                  Philippines, Los Baños
+                </li>
+                <li>
+                  <span>High School</span><br />Poten & Eliseo Quesada Memorial
+                  National High School
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work-card">
+            <img src="images/placeholder-square.jpg" />
+            <div class="work-card-text">
+              <h3>Project Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                doloremque, cumque, voluptatibus, eveniet quisquam voluptates
+                aspernatur sint nobis ad facilis.
+              </p>
+            </div>
+          </div>
+          <div class="work-card">
+            <img src="images/placeholder-square.jpg" />
+            <div class="work-card-text">
+              <h3>Project Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                doloremque, cumque, voluptatibus, eveniet quisquam voluptates
+                aspernatur sint nobis ad facilis.
+              </p>
+            </div>
+          </div>
+          <div class="work-card">
+            <img src="images/placeholder-square.jpg" />
+            <div class="work-card-text">
+              <h3>Project Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                doloremque, cumque, voluptatibus, eveniet quisquam voluptates
+                aspernatur sint nobis ad facilis.
+              </p>
+            </div>
+          </div>
+          <div class="work-card">
+            <img src="images/placeholder-square.jpg" />
+            <div class="work-card-text">
+              <h3>Project Title</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+                doloremque, cumque, voluptatibus, eveniet quisquam voluptates
+                aspernatur sint nobis ad facilis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="see-more">See more</a>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:jlmatienzo1@gmail.com">jlmatienzo1@gmail.com</a>
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:+639173123456">+639173123456</a>
+            </p>
+            <div class="social-links">
+              <a href="https://linkedin.com/in/jljmatienzo/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://facebook.com/jljmatienzo" target="_blank">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+              <a href="https://instagram.com/jljmatienzo" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="https://twitter.com/jolozozozo" target="_blank">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="https://bsky.app/profile/jolozozozo" target="_blank">
+                <i class="fa-brands fa-bluesky"></i>
+              </a>
+            </div>
+            <a href="" download class="cv-button">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <div class="contact-form">
+              <form action="">
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <textarea rows="6" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      Copyright &copy; Kevin. Made with <i class="fa-solid fa-heart"></i> by
+      EasyTutorials.
+    </div>
+  </body>
+
+  <script>
+    var tabLinks = document.querySelectorAll(".tab-link");
+    var tabContents = document.querySelectorAll(".tab-contents");
+
+    function setActive(tab) {
+      tabLinks.forEach((link) => {
+        link.classList.remove("active");
+      });
+      tabContents.forEach((content) => {
+        content.classList.remove("active");
+      });
+
+      event.currentTarget.classList.add("active");
+      document.getElementById(tab).classList.add("active");
+    }
+  </script>
+</html>
