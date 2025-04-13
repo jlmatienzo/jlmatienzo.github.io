@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #f0f0f0;
+  --secondary-color: #070707;
+  --text-color: #f0f0f0;
+  --background-color: #080808;
+  --border-color: #ababab;
+  --hover-color: #f0f0f0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -22,9 +31,16 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background-image: url(images/background.png);
+  background-image: url(images/pexels-stijn-dijkstra-1306815-2499792.jpg);
   background-size: cover;
   background-position: center;
+}
+#header::after {
+  content: "Photo by Stijn Dijkstra: https://www.pexels.com/photo/body-of-water-2499792/";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #navbar {
@@ -60,7 +76,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #ff004f;
+  background: var(--primary-color);
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -85,17 +101,22 @@ body {
   margin-bottom: 20px;
 }
 .header-text h1 span {
-  color: #ff004f;
+  color: var(--secondary-color);
 }
 
 .cta-button {
   display: inline-block;
-  color: #f0f0f0;
-  background-color: #ff004f;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
   padding: 10px 25px;
   border-radius: 30px;
   text-decoration: none;
   font-size: 26px;
+}
+.cta-button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition: all 0.3s ease;
 }
 
 /* about */
@@ -118,13 +139,6 @@ body {
   width: 100%;
   height: auto;
   border-radius: 15px;
-}
-.about-image {
-  width: 100%;
-  height: 640px;
-  border-radius: 15px;
-  border: 1px solid #ababab;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 .row .about-col-2 {
@@ -150,7 +164,7 @@ body {
   content: "";
   width: 0%;
   height: 3px;
-  background: #ff004f;
+  background: var(--primary-color);
   position: absolute;
   left: 0;
   bottom: -8px;
@@ -203,7 +217,7 @@ body {
 }
 .service-card i {
   font-size: 35px;
-  color: #ff004f;
+  color: var(--primary-color);
 }
 .service-card h3 {
   font-size: 24px;
@@ -261,7 +275,7 @@ body {
   left: 0;
   width: 100%;
   height: 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), #ff004f);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), var(--primary-color));
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -288,7 +302,7 @@ body {
   font-size: 18px;
   padding: 10px 20px;
   border-radius: 30px;
-  background-color: #ff004f;
+  background-color: var(--primary-color);
 }
 .work-card:hover .work-card-text {
   height: 100%;
@@ -299,13 +313,13 @@ body {
   width: fit-content;
   margin: auto;
   padding: 20px 50px;
-  border: 1px solid #ff004f;
+  border: 1px solid var(--primary-color);
   border-radius: 10px;
   color: #f0f0f0;
   text-decoration: none;
 }
 .see-more:hover {
-  background-color: #ff004f;
+  background-color: var(--primary-color);
   color: #070707;
 }
 
@@ -327,7 +341,7 @@ body {
   font-size: 25px;
 }
 .contact-left p i {
-  color: #ff004f;
+  color: var(--primary-color);
   margin-right: 15px;
   font-size: 25px;
 }
@@ -343,22 +357,24 @@ body {
   display: inline-block;
 }
 .social-links a:hover {
-  color: #ff004f;
+  color: var(--primary-color);
 }
 .social-links a i {
   transition: all 0.3s ease;
 }
 .cv-button {
-  color: #f0f0f0;
-  background-color: #ff004f;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 10px 25px;
   border-radius: 10px;
   text-decoration: none;
   font-size: 24px;
 }
 .cv-button:hover {
-  background-color: #f0f0f0;
-  color: #ff004f;
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
 }
 
 .contact-right {
@@ -384,8 +400,8 @@ body {
   outline: none;
 }
 .contact-right form button {
-  background-color: #ff004f;
-  color: #f0f0f0;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 20px;
   padding: 10px 20px;
   margin-top: 20px;
@@ -394,8 +410,10 @@ body {
   cursor: pointer;
 }
 .contact-right form button:hover {
-  background-color: #f0f0f0;
-  color: #ff004f;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: 1px solid var(--border-color);
+  transition: all 0.3s ease;
 }
 
 /* footer */
@@ -409,7 +427,7 @@ body {
   padding: 40px 0;
 }
 #footer i {
-  color: #ff004f;
+  color: var(--primary-color);
 }
 
 /* small screen */
@@ -419,13 +437,13 @@ body {
   cursor: pointer;
 }
 #navbar .fa-solid:hover {
-  color: #ff004f;
+  color: var(--primary-color);
 }
 
 @media only screen and (max-width: 600px) {
-  #header {
+  /* #header {
     background-image: url(images/mobile-background.png);
-  }
+  } */
   .header-text {
     margin-top: 20%;
     font-size: 16px;
@@ -477,6 +495,15 @@ body {
   .tab-link {
     margin-right: 20px;
     font-size: 16px;
+  }
+
+  .row .about-col-1,
+  .row .about-col-2 {
+    flex-basis: 100%;
+  }
+  .about-col-1 img {
+    width: 100%;
+    height: auto;
   }
 
   .contact-left,

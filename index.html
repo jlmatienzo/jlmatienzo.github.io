@@ -10,7 +10,6 @@
       src="https://kit.fontawesome.com/99c1d8fd34.js"
       crossorigin="anonymous"
     ></script>
-    <script src="script.js" defer></script>
   </head>
   <body>
     <div id="header">
@@ -46,17 +45,15 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <div class="about-image">
-              <img src="about.jpg" alt="About Me" />
-            </div>
+            <img src="images/about.png" alt="About Me" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
-              cum distinctio? Est quos, nesciunt voluptates provident officiis
-              perspiciatis ipsum ducimus minus unde nulla doloribus! Suscipit
-              corporis id cum porro repudiandae!
+              Hi! I am Jolo Matienzo, a software developer from the Philippines.
+              I specialize in creating web and mobile applications and have a
+              passion for building efficient software solutions. With experience
+              in various technologies.
             </p>
             <div class="tab-titles">
               <p class="tab-link active" onclick="setActive('skills')">
@@ -69,8 +66,58 @@
             </div>
             <div class="tab-contents active" id="skills">
               <ul>
-                <li><span>Web Development</span><br />Web app development</li>
-                <li><span>Web Development</span><br />Web app development</li>
+                <li>
+                  <span>Web Development</span><br />
+                  Implement design and functionality of web application<br /><br />
+                  <div>
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                      height="32"
+                      alt="javascript logo"
+                    />
+                    <img width="12" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                      height="32"
+                      alt="typescript logo"
+                    />
+                    <img width="12" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                      height="32"
+                      alt="react logo"
+                    />
+                    <img width="12" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+                      height="32"
+                      alt="nextjs logo"
+                    />
+                    <img width="12" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
+                      height="32"
+                      alt="jest logo"
+                    />
+                    <img width="12" />
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+                      height="32"
+                      alt="tailwindcss logo"
+                    />
+                  </div>
+                </li>
+                <li>
+                  <span>Mobile Development</span><br />
+                  Implement design and functionality of mobile application<br />
+                  <div>
+                    <img
+                      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                      height="32"
+                      alt="flutter logo"
+                    />
+                  </div>
+                </li>
               </ul>
             </div>
 
@@ -184,7 +231,12 @@
             </div>
           </div>
         </div>
-        <a href="#" class="see-more">See more</a>
+        <a
+          target="_blank"
+          href="https://github.com/jlmatienzo?tab=repositories"
+          class="see-more"
+          >See more</a
+        >
       </div>
     </div>
 
@@ -249,8 +301,7 @@
     </div>
 
     <div id="footer">
-      Copyright &copy; Kevin. Made with <i class="fa-solid fa-heart"></i> by
-      EasyTutorials.
+      Made with <i class="fa-solid fa-heart"></i> by EasyTutorials.
     </div>
   </body>
 
@@ -292,6 +343,10 @@
       e.preventDefault();
       fetch(scriptURL, { method: "POST", body: new FormData(form) })
         .then((response) => console.log("Success!", response))
+        .then(() => {
+          form.reset();
+          alert("Message sent successfully!");
+        })
         .catch((error) => console.error("Error!", error.message));
     });
   </script>
