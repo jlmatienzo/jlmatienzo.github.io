@@ -101,7 +101,8 @@ body {
   margin-bottom: 20px;
 }
 .header-text h1 span {
-  color: var(--secondary-color);
+  color: var(--border-color);
+  text-shadow: 2px 2px 2px var(--secondary-color);
 }
 
 .cta-button {
@@ -184,7 +185,7 @@ body {
   margin: 10px 0;
 }
 .tab-contents ul li span {
-  color: #b54769;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 18px;
 }
