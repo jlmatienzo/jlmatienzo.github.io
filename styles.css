@@ -256,6 +256,11 @@ body {
 }
 .work-card {
   border-radius: 10px;
+  background-color: var(--primary-color);
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
 }
